@@ -2,6 +2,7 @@ package main
 
 import (
 	shopapp "hoainam/gin-test/shop_app"
+	userapp "hoainam/gin-test/user_app"
 	"io"
 	"log"
 	"net/http"
@@ -60,6 +61,8 @@ func main() {
 	shopapp.GetRoutes(v1)
 	//r.GET("/getproduct", papi.ShowProduct)
 	// r.Run(":8000") // listen and serve on 0.0.0.0:8080
+	vuser := r.Group("/user")
+	userapp.GetRoutes(vuser)
 
 	server01 := &http.Server{
 		Addr:         ":8080",

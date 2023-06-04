@@ -6,4 +6,5 @@
 
 [GIN-debug] GET    /ping                     --> main.main.func1 (3 handlers)
 [GIN-debug] GET    /v1/getinfo               --> hoainam/gin-test/shop_app/apis.GetProduct (4 handlers)
-[GIN] 2023/06/04 - 23:11:44 | 200 |            0s |             ::1 | GET      "/v1/getinfo"
+[GIN-debug] POST   /user/login               --> hoainam/gin-test/user_app/apis.Login (3 handlers)
+[GIN] 2023/06/04 - 23:50:15 | 500 |      2.8982ms |             ::1 | POST     "/user/login"
